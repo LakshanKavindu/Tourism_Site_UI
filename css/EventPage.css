@@ -1,0 +1,132 @@
+
+body{background-color:white;
+    
+
+}
+
+section.event_card_all{
+    background-image: url(../resources/images/event/back.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.card_raw1{display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+
+}
+h1{text-align: center;text-decoration:double}
+.card{background-color: rgba(109, 98, 98, 0.741);
+    width: 250px;
+
+    margin: 50px;
+    border-radius: 15px;
+    font-family: Neucha;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    transition: all 0.5s ease;
+    
+
+
+
+
+}
+.event_card{padding-top: 30px;}
+
+#a1{
+   
+    position: absolute;
+    bottom:20px;
+    padding: 0.5em 0.75em;
+    border-radius: 12px;
+    text-decoration: none;
+    
+    margin-left: 60px;
+    margin-top: 30px;
+    
+    background-color: rgb(28, 22, 22); color: white;
+}
+
+.card .day{color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.664);
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    border-top-left-radius: 15px;
+    z-index: 100;
+    display:flex;
+    
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+
+
+
+
+}
+.card .details{
+    width:100%;
+    padding:2em 1em;
+    
+}
+
+.card p {
+    width:100%;
+    text-align:left;
+    margin-bottom: 30px;
+}
+.card_image{
+    background-color: rgb(34, 192, 139);
+    height: 150px;
+ 
+    background-size: cover;
+    border-radius:15px ;
+
+
+
+
+}
+.img1{
+    background-image: url(../resources/images/event/kandyperahara.jpg) ;
+
+}
+.img2{
+    background-image: url(../resources/images/event/vesak.jpg);
+
+}
+.img3{
+    background-image: url(../resources/images/event/divali.jpg);
+
+}
+.img4{
+    background-image: url(../resources/images/event/christmas.jpg);
+
+}
+.img5{
+    background-image: url(../resources/images/event/poson.jpg);
+
+}
+.img6{
+    background-image: url(../resources/images/event/ramadan.jpg);
+
+}
+
+.card:hover{background-color: antiquewhite;
+    transform:  scale(1.04);
+
+}
+#a1:hover{transform: scale(1.05);}
+
+p,h1{
+    color: white;
+}
+.card:hover p,h1{
+    color: black;
+}
