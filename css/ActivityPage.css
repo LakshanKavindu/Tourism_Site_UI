@@ -1,0 +1,124 @@
+section.activity_cards{
+    background-image: url("../resources/images/bg/bg\ 1.jpg");
+    background-repeat: repeat-y;
+    width: 100%;
+}
+
+.card_container{
+    display: block;
+   
+}
+
+
+.card_raw{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    width:280px;
+    min-height:300px;
+    max-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem 1rem 4rem 1rem  ;
+    
+    align-items:center ;
+    cursor: pointer;
+
+
+}
+
+.card_image{
+    width:280px;
+    min-height:300px;
+    max-height: 300px;
+    border-radius: 12px;
+    position: absolute;
+}
+
+.card_overlay{
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+    width:280px;
+    min-height:300px;
+    max-height: 300px;
+    border-radius: 12px;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.card_decsription{
+    z-index:20;
+    text-align: center;
+    transition: .6s ease;
+    opacity: 0;
+    height: 100%;
+}
+
+.card_title{
+    color: #A0D2EB;
+    font-family: Koulen;
+    position: absolute;
+    top:30px;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 19.6px;
+}
+
+.card_des{
+    color: #E5EAF5;
+    font-family: Neucha;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.location_mark{
+    color:red;
+    font-size: x-large;
+    position: absolute;
+    bottom:20px;
+    left:42%;
+ 
+    animation: animate 1s infinite ease;
+    background-color: aliceblue;
+    padding:0.5em;
+    border-radius: 50%;
+  
+    
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(-20px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+
+.card:hover  .card_overlay{
+    opacity: 0.7;
+   
+}
+
+.card:hover .card_decsription{
+    opacity: 1;
+}
+
+
+
+
+
