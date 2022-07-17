@@ -1,0 +1,249 @@
+body{
+    /*background: #55ffe5;*/
+    background:rgba(226, 223, 223, 0.8)
+}
+/* Position the image container (needed to position the left and right arrows) */
+.slider_background{
+    position: relative;
+    height:100%;
+    background-position: center;
+    display:grid;
+    place-items: center;
+    
+
+    
+}
+
+.slider_background .slider_back_image{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    filter: blur(4px);
+    
+    
+    
+    
+}
+.container {
+    position: relative;
+    width: 100%;
+    height:100%;
+    /* top:50%;
+    transform: translateY(-50%); */
+    margin:0 auto;
+    z-index: 1;
+
+
+}
+
+.container::after{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color: white;
+    position: absolute;
+    z-index:-1;
+    
+    top:0;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+  
+  /* Next & previous buttons */
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.container img{
+    width: 100%;
+    height: 60vh;
+}
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+.row img{
+    width: 100%;
+    height: 20vh;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+  
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.4;
+}
+  
+.active,.demo:hover {
+    opacity: 1;
+}
+
+
+
+  /*------------------------contact box styles -------------------------*/
+.contact-details{
+  background: aquamarine;
+}
+.contain{
+    width: 100%;
+    padding-top:25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 25px;
+}
+.contactbox{
+    background: white ;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.contactbox.up{
+    transform:translateY(0px);
+    opacity: 1;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: darkblue;
+    color: #fff;
+}
+h1{
+    margin-bottom: 10px;
+}
+h3{
+    margin-bottom:10px;
+}
+.contain p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    width:100%;
+    max-width:525px;
+    max-height:30%;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+button{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.buttons{
+    display: flex;
+    justify-content:space-between;
+}
+
+a{
+    text-decoration: none;
+}
+.contact-left.h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right.h2{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 30px;
+}
+img {
+    vertical-align: middle;
+  }
+
+@media screen and (max-width:1024px) {
+    .contact-left{
+        flex-basis:100%;
+
+    }
+    .contact-right{
+        flex-basis:100%;
+    }
+}
