@@ -1,0 +1,163 @@
+section.destination_card{
+    background-image: url("../resources/images/bg/bg\ 7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+   
+}
+
+
+.card_container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+.card_container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100vw;
+    margin-block:1em;
+  }
+  
+.card_container::-webkit-scrollbar-thumb {
+    background: rgb(158, 158, 158);
+    border-radius: 100vw;
+    cursor:pointer;
+    
+    
+  }
+
+.card_container::-webkit-scrollbar-thumb:hover {
+    background: rgb(134, 134, 134);
+  }
+
+.card_container{
+    display: block;
+    max-height: 950px;
+    overflow-y: scroll;
+    margin:0 auto;
+    width:80%;
+
+   
+}
+.card_raw{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width:230px;
+    min-height:350px;
+    max-height: 350px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3rem 1rem 1.5rem 1.5rem  ;
+    align-items:center ;
+}
+
+.destination_location{
+    z-index: 30;
+    border:2px solid black;
+    padding:.5em .75em;
+    border-radius: 50%;
+    position: absolute;
+    top:-7%;
+    transition: 0.3s ease 0.1s;
+}
+
+
+.location_mark{
+    font-size: 1.8rem; 
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.card_overlay{
+    background-color: black;
+    position: absolute;
+    width:230px;
+    min-height:350px;
+    max-height: 350px;
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+.card_img{
+    position: absolute;
+    z-index: 20;
+    overflow:hidden;
+    
+}
+
+.card_image{
+    width:230px;
+    min-height:350px;
+    max-height: 350px;
+    margin-top: 4px;
+    border-radius: 12px;
+    transition: 0.6s ease;
+    
+}
+
+
+.des_description{
+    text-align: center;
+    z-index: 2;
+}
+
+.des_detail{
+    opacity: 0;
+    transition: 0.6s ease-in-out 0.1s;
+    color: aliceblue;
+    font-family: Neucha;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.des_title{ 
+    color: #000000;
+    font-family: Koulen;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    bottom: -40px;
+    transition: 0.5s ease-in-out;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.des_title_text{
+    font-size: 1.3rem;
+}
+
+
+.card:hover .card_image{
+    transform:translateX(100%);
+}
+
+.card:hover .des_detail{
+    opacity: 1;
+}
+
+.card:hover .des_title{
+    transform: scale(75%) translateY(-200%) translateX(-70%);
+}
+
+.card:hover .destination_location{
+    background-color: #f9ff60;
+    background-image: linear-gradient(315deg, #f9ff60 0%, #ffef77 74%);
+    transform: scale(115%);
+    border-color: rgb(170, 104, 13);
+}
+
+.card:hover .location_mark{
+    color: rgb(255, 0, 0);
+}
