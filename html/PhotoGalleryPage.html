@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link style files-->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/PhotoGalleryPage.css">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- .................... -->
+
+       <!-- font awesome link -->
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+       <!-- .................. -->
+    <title>Photo Gallery Page</title>
+    
+</head>
+<body>
+
+
+    <div class="my_container">      <!--start the main div-->
+
+        <!---------------start navigation bar-------------->
+        <nav>
+            <div class="mobile_logo">
+                <img src="../resources/images/index/logo/Delta_X.png" alt="">
+            </div>
+
+            <ul class="list">
+                <li><a href="../html/Index.html">home</a></li>
+                <li><a href="../html/EventPage.html">events</a></li>
+                <li><a href="../html/ActivityPage.html">activities</a></li>
+                <li><a href="../html/DestinationPage.html">destination</a></li>
+                <li><a href="../html/BookingPage.html">booking</a></li>
+                <li><a href="../html/PhotoGalleryPage.html" class="active_tab">photo gallery</a></li>
+              
+            </ul>
+
+            <div class="burger">
+                <div class="line1 line"></div>
+                <div class="line2 line"></div>
+                <div class="line3 line"></div>
+            </div>
+
+        </nav>
+        <!---------------end navigation bar-------------->
+        
+        <!---------------start header box----------------->
+        <section class="page_title">
+            <div class="page_title_image">
+                <img src="../resources/images/event/ramadan.jpg" alt="title_image">
+                
+            </div>
+            <div class="title">
+                <h1>Photo Gallery</h1>
+            </div>
+        </section>
+        <!---------------end header box----------------->
+        
+        <!-------------------------start photo slide show------------------------------>
+       
+            <div class="slider_background">
+                <img class="slider_back_image" src="../resources/images/photo_gallery/bg.jpg" alt="">
+                <div class="container">
+                        <div class="mySlides">
+                          <div class="numbertext">1 / 6</div>
+                          <img src="../resources/images/photo_gallery/1.png"  >
+                        </div>
+                
+                        <div class="mySlides">
+                          <div class="numbertext">2 / 6</div>
+                          <img src="../resources/images/photo_gallery/2.png"  >
+                        </div>
+                
+                        <div class="mySlides">
+                          <div class="numbertext">3 / 6</div>
+                          <img src="../resources/images/photo_gallery/3.jpg"  >
+                        </div>
+                
+                        <div class="mySlides">
+                          <div class="numbertext">4 / 6</div>
+                          <img src="../resources/images/photo_gallery/4.jpg"  >
+                        </div>
+                
+                        <div class="mySlides">
+                          <div class="numbertext">5 / 6</div>
+                          <img src="../resources/images/photo_gallery/5.jpg"  >
+                        </div>
+                
+                        <div class="mySlides">
+                          <div class="numbertext">6 / 6</div>
+                          <img src="../resources/images/photo_gallery/6.jpg"  >
+                        </div>
+                
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
+                
+                        <div class="row">
+                          <div class="column">
+                            <img class="demo cursor" src="../resources/images/photo_gallery/1.png"   onclick="currentSlide(1)" alt="a">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../resources/images/photo_gallery/2.png"   onclick="currentSlide(2)" alt="b">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../resources/images/photo_gallery/3.jpg"   onclick="currentSlide(3)" alt="c">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../resources/images/photo_gallery/4.jpg"   onclick="currentSlide(4)" alt="d">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../resources/images/photo_gallery/5.jpg"   onclick="currentSlide(5)" alt="e">
+                          </div>
+                          <div class="column">
+                            <img class="demo cursor" src="../resources/images/photo_gallery/6.jpg"   onclick="currentSlide(6)" alt="f">
+                          </div>
+                        </div>
+                </div>
+                
+            </div>
+        <!-------------------------end photo slide show------------------------------>
+
+        <!-------------------------start contact details box------------------------------>
+        <div class="contact-details">
+            <div class="contain">
+                <h1>Contact Us</h1>
+                <p>we will help you as soon as possible.stay tune with us.</p>
+                <div class="contactbox">
+                    <div class="contact-left">
+                        <h3>Sent Your Massage</h3>
+                        <form name="myform" method="post" onsubmit="return validateform()">
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>name</label>
+                                    <input type="text" name="name" placeholder="jon snow" required>
+                                </div>
+                                <div class="input-group">
+                                    <label>phone</label>
+                                    <input type="text" name="tel" placeholder="+94112-678-578">
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>E-Mail</label>
+                                    <input id="email" type="text" name="email" placeholder="jon snow@got.com" required>
+                                </div>
+                            </div>
+                            <label>Massage *</label>
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                            <div class="buttons">
+                                <div class="submit">
+                                    <button type="submit">Send</button>
+                                </div>
+                                <div class="menu">
+                                    <button type="reset">Reset</button>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-right">
+                        <h2>Connect Via</h2>
+                            <table>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>someone@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td>+94112-232-323</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>NO.23,<br>ABC DEF ROAD,<br>
+                                        COLOMBO,<br>SRI-LANKA.
+                                    </td>
+                                </tr>
+                            </table>
+        
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------end contact details box------------------------------>
+
+        <!-------------------------start footer------------------------------>
+        <section class="footer">
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+                    <img src="../resources/images/index/logo/Delta_X.png" alt="" >
+                    <h3>About<span>DeltaX</span></h3>
+
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        |
+                        <a href="#">Blog</a>
+                        |
+                        <a href="#">About</a>
+                        |
+                        <a href="#">Contact</a>
+                    </p>
+
+                    <p class="footer-company-name">© 2022 DeltaX Learning Solutions Pvt. Ltd.</p>
+                </div>
+
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>309 - ABC Solitaire,
+                            Bldg. No. A - 1, Sector - 1</span>
+                            Molpe Road, Moratuwa - 400710</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+94 11-2778218</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@deltax.com">support@deltax.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        We offer training and skill building courses across Technology, Design, Management and Science.</p>
+                    <div class="footer-icons">
+                        <a class="facebook" href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="insta" href="#"><i class="fa fa-instagram"></i></a>
+                        <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                        <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!-------------------------end footer------------------------------>
+
+    </div>      <!--start the main div-->
+    
+
+    <!-- link the js file  -->
+    <script src="../js/Index.js"></script>
+    <script src="../js/photogallery.js"></script>
+    
+
+    <!-- ............... -->
+       
+</body>
+</html>
