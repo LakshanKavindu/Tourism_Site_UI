@@ -1,12 +1,17 @@
-section.destination_card{
+section.destination_body{
     background-image: url("../resources/images/bg/bg\ 7.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: fit-content;
+    height: 100%;
+    display: flex;
+    margin-left: 0;
    
 }
 
+section.destination_card{
+    width:80%;
+}
 
 .card_container::-webkit-scrollbar {
     width: 10px;
@@ -32,21 +37,23 @@ section.destination_card{
   }
 
 .card_container{
-    display: block;
     max-height: 950px;
     overflow-y: scroll;
     margin:0 auto;
     width:80%;
-
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
    
 }
-.card_raw{
+/* .card_raw{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .card{
     width:230px;
@@ -161,3 +168,79 @@ section.destination_card{
 .card:hover .location_mark{
     color: rgb(255, 0, 0);
 }
+
+/* map */
+
+
+section.lanka_map{
+    margin-right: 0;
+    margin-left: 5%;
+    width:30%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#map {
+    margin-top: 13%;
+    margin-bottom: 60%;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+   
+}
+/* 
+.places--a{
+    margin-left: 10%;
+    display: flex;
+}
+
+.pl{
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pl:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.places_type_card{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 250px;
+}
+
+.places_type_card h3{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 240px;
+    font-size: large;
+    cursor: pointer;
+    text-align: center;
+}
+
+.places_type_card_container{
+    transition: 0.6s ease-in-out;
+}
+
+.container_1{
+    transform: translateY(-220px);
+}
+
+.container_2{
+    transform: translateY(-320px);
+}
+
+.places_box_activate{
+    transform: translateX(0%);
+  
+}  */
